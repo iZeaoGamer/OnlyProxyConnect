@@ -1,0 +1,11 @@
+## Welcome to OnlyProxyJoin's configurations file.
+# Colorcodes are supported within the kick message.
+# Use the & symbol for color coding.
+
+Kick-Message: "&cPlease join via the proxy."
+
+# If true this will use pocketmines API to transfer a player to the main proxy IP.
+# IP can be a string too if kept in quotation marks. E.g: play.yourserver.net
+
+Send-To-Proxy-On-Kick: false
+Proxy-IP: "0.0.0.0"
