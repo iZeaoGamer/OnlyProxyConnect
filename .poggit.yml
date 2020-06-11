@@ -5,4 +5,6 @@ branches:
 projects:
   OnlyProxyConnect:
     path: ""
+    lint:
+      phpstan: false
 ...
