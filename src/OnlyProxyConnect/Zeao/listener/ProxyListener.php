@@ -6,7 +6,7 @@ namespace OnlyProxyConnect\Zeao\listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
-use OnlyProxyJoin\Zeao\Loader;
+use OnlyProxyConnect\Zeao\Loader;
 
 class ProxyListener implements Listener{
 	
