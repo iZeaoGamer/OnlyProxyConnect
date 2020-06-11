@@ -2,10 +2,17 @@
 # Colorcodes are supported within the kick message.
 # Use the & symbol for color coding.
 
-Kick-Message: "&cPlease join via the proxy."
+# If Send-To-Proxy-On-Kick is set to true,
+# then you might want to change this message to suit your needs.
+Proxy-Message: "&cPlease join via the proxy."
 
-# If true this will use pocketmines API to transfer a player to the main proxy IP.
+# If true this will use WaterDog's method of transferring a player to the main proxy IP.
 # IP can be a string too if kept in quotation marks. E.g: play.yourserver.net
 
 Send-To-Proxy-On-Kick: false
+# The proxy server's ip. Since getAddress() is changed within the proxy, so use the proxy's way of retrieving the IP.
+# Note - It's not a server ip. It's the proxy's IP Address. More explained in the README.MD
 Proxy-IP: "0.0.0.0"
+
+# The proxy server name, as seen in the WatchDog's config.yml file within the proxy.
+Proxy-Name: "Lobby"
