@@ -33,7 +33,7 @@ class Loader extends PluginBase{
 
         $pk = new ScriptCustomEventPacket();
         $pk->eventName = "bungeecord:main";
-        $pk->eventData = Binary::writeShort(strlen("Connect")) . "Connect" . Binary::writeShort(strlen($server)) . $server;
+        $pk->eventData = Binary::writeShort(strlen("Connect")) . "Connect" . Binary::writeShort(strlen($serverName)) . $serverName;
         $player->sendDataPacket($pk);
         return true;
     }
