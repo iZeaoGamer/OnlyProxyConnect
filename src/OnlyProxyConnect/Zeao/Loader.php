@@ -9,6 +9,7 @@ use OnlyProxyConnect\Zeao\listener\ProxyListener;
 use pocketmine\network\mcpe\protocol\ScriptCustomEventPacket;
 use pocketmine\Server;
 use pocketmine\Player;
+use pocketmine\utils\Binary;
 
 class Loader extends PluginBase{
     public static $api;
