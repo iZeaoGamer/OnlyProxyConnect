@@ -45,7 +45,7 @@ class Loader extends PluginBase{
      */
     public static function sendMessage(string $playerName, string $message)
     {
-        $sender = $this->getServer()->getOnlinePlayers()[array_rand($this->getServer()->getOnlinePlayers())];
+        $sender = Server::getInstance()->getOnlinePlayers()[array_rand(Server::getInstance()->getOnlinePlayers())];
         if ($sender != null && $sender instanceof Player) {
             $pk = new ScriptCustomEventPacket();
             $pk->eventName = "bungeecord:main";
