@@ -18,7 +18,7 @@ class Loader extends PluginBase{
         $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents(new ProxyListener($this), $this);
     }
-    static public function getAPI(): Loader{ //Used for API methods.
+    static function getAPI(): Loader{ //Used for API methods.
         return self::$api;
     }
       /**
@@ -28,7 +28,7 @@ class Loader extends PluginBase{
      * @return bool
      * Transfers the Player $player to the server $serverName
      */
-    public static function transferServer(Player $player, string $serverName): bool
+    static function transferServer(Player $player, string $serverName): bool
     {
 
         $pk = new ScriptCustomEventPacket();
@@ -38,12 +38,12 @@ class Loader extends PluginBase{
         return true;
     }
      /**
-     * @param string $player
+     * @param string $playerName
      * @param string $message
      * @return bool
-     * Sends a message $message to the Player $player
+     * Sends a message $message to the player string: $playerName
      */
-    public static function sendMessage(string $playerName, string $message)
+    static function sendMessage(string $playerName, string $message)
     {
         $sender = Server::getInstance()->getOnlinePlayers()[array_rand(Server::getInstance()->getOnlinePlayers())];
         if ($sender != null && $sender instanceof Player) {
